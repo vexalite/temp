@@ -1,62 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.0/jsmediatags.min.js"></script>
-
-    <style>
-        div{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            
-        }
-     #metadata{
-            font-size: 5px;
-        }
-    </style>
-</head>
-<body>
-    <div id="metadata"></div>
-    <div>
-        
-    <audio id="a2" controls loop src="Music/Selena Gomez - Look At Her Now (Official Video)(MP3_160K).mp3"></audio>
-    <audio id="a1" controls loop src="Music/Ananya Birla - Meant To Be(MP3_128K).mp3"></audio>
-    <audio controls loop src="Music/Andy Leech  - The Journey(MP3_160K)_1.mp3"></audio>
-    <audio controls loop src="Music/_AlaVaikunthapurramuloo - Samajavaragamana Full Vi(M4A_128K).m4a"></audio>
-    <audio controls loop src="Music/1. You Matter - Talhah Yunus _ Talha Anjum (Prod(MP3_160K).mp3"></audio>
-    <audio controls loop src="Music/24kGoldn - Mood (Lyrics) ft. Iann Dior(MP3_160K)_1.mp3"></audio>
-    <audio controls loop src="Music/A sky full of stars _ Sau Aasmaan  (A Krimson Blen(MP3_160K).mp3"></audio>
-    <audio controls loop src="Music/AADATEIN (Official Music Video) _ Dee MC _ Prod. b(MP3_160K)_1.mp3"></audio>
-    <audio controls loop src="Music/About Love -Marina(MP3_160K).mp3"></audio>
-    <audio controls loop src="Music/Alec Benjamin - Let Me Down Slowly [Official Music Video](MP3_160K)_1.mp3"></audio>
-    <audio controls loop src="Music/Ananya - Let There Be Love (Remix Ft King _ Rahul Sathu)(MP3_160K)_1.mp3"></audio>
-<audio controls loop
-src="Music/[Future Bass] Halsey - Ghost (Karan Kanchan Remix)(MP3_160K)_1.mp3"></audio>
-</div>
-</body>
-<script>
-    const audioElements = document.querySelectorAll('audio');
-    const metadataDiv = document.getElementById('metadata');
-  
-    audioElements.forEach(audio => {
-      jsmediatags.read(audio.src, {
-        onSuccess: function(tag) {
-          const artist = tag.tags.artist;
-          const title = tag.tags.title;
-          const audioTitle = audio.getAttribute('title');
-          const metadata = document.createElement('p');
-          metadata.textContent = `${audioTitle}: ${artist} - ${title}`;
-          metadataDiv.appendChild(metadata);
-        },
-        onError: function(error) {
-          console.log(error);
-        }
-      });
-    });
-  </script>
-
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="slide one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </div>
+  </body>
 </html>

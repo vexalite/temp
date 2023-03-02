@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one {
+  background: url("https://image.lexica.art/full_jpg/022faccf-1d66-46e6-a545-3e254de4d045");
+  background-size:auto 100vh;
+  background-repeat: no-repeat;
+  
+  width: 400vw;
+}
+.two {
+  background: url("https://image.lexica.art/full_jpg/a629666c-1f33-4fac-befe-6d37f4dc73b8");
+  background-size: auto 100vh;
+  
+  width: 400vw;
+}
+.three {
+  background: url("https://image.lexica.art/full_jpg/587948aa-24c5-4e1d-aae5-62e913795cf6");
+  background-size: auto 100vh;
+  
+  width: 400vw;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display:none;
+}
