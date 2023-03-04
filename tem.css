@@ -1,0 +1,97 @@
+/* neon #64FFDA */
+body{
+    background-color: #0A192F !important;
+    color:rgb(136, 146, 176);
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+.high{
+    color:#CCD6F6 !important;
+}
+.norm{
+    color: #8892B0 !important;
+}
+.neon{
+    color:#64FFDA !important;
+    
+}
+.red{
+    color: #e63946 !important;
+    padding-left: 50px;
+}
+#navbarCollapse{
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+#intro{
+    margin-top: 30em !important;
+    margin-bottom: 40em !important;
+}
+#about{
+    margin-top: 30em !important;
+    margin-bottom: 20em !important;
+}
+#pro{
+    margin-top: 30em !important;
+    margin-bottom: 20em !important;
+}
+#skills{
+    margin-top: 30em !important;
+    margin-bottom: 20em !important;
+}
+#white{
+    color: white !important;
+}
+#cont{
+    color: rgb(100, 255, 218) ;
+    background-color: transparent ;
+    border: 1px solid rgb(100, 255, 218) ;
+    border-radius: 3px ;
+    padding: 1.25rem 1.75rem ;
+    font-size: 14px ;
+    line-height: 1 ;
+    text-decoration: none !important;
+    cursor: pointer ;
+    margin-top: 50px ;
+}
+#con{
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    border: 1px solid rgb(100, 255, 218);
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    margin-left: 10px;
+    font-size: 13px;
+}
+hr{
+    padding-bottom: 20px;
+    color: #64FFDA;
+}
+img {
+    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    /* filter: grayscale(100%);
+    border: #64FFDA 2px solid;  */
+    
+  }
+.img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border: #64FFDA 2px solid;
+}
+.img1{
+    filter: hue-rotate(90deg);
+    -webkit-filter: hue-rotate(90deg); 
+  }
+img:hover{
+    filter:none;
+}
+.img1:hover{
+    filter:none;
+}
+.img2{
+    filter: saturate(10);
+}
